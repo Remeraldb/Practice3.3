@@ -30,6 +30,9 @@ public partial class Employee
     [Column(TypeName = "datetime")]
     public DateTime? HireDate { get; set; }
 
+    [StringLength(100)]
+    public string? Email { get; set; }
+    
     [StringLength(60)]
     public string? Address { get; set; }
 
